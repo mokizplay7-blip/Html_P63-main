@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="typo.css" />
+</head>
+<body class="nunito-regular">
+    <h1 class="display-large">Типографіка. Стани елементів.</h1>
+    <h2 class="display-medium">Що таке типографіка<sup>*</sup></h2>
+    <p>
+        Типографіка – це напрям сучасного графічного дизайну і система оформлення 
+        друкованого тексту. Вона, зокрема, передбачає вибір гарнітури, 
+        кеглю, довжини рядка, міжрядкового і міжсимвольного інтервалу. 
+        Основна мета типографіки&nbsp;– зробити текст легким для сприйняття й привабливим, 
+        адже утримати увагу глядача у переповненому візуальним контентом світі 
+        може бути непростим завданням.
+    </p>
+    <p>
+        Серед головних аспектів типографіки можна виділити чіткість, читабельність та естетику. 
+        Чіткість визначає, наскільки зручним є текст для сприйняття. 
+        Читабельність більше стосується легкості розуміння, а естетика, у свою чергу, 
+        відповідає за загальну привабливість шрифту чи комбінації шрифтів.
+    </p>
+    <sup>*</sup>за матеріалами https://blog.depositphotos.com/ua/pravyla-typografiky.html
+
+    <h2 class="display-medium">Стани елементів</h2>
+    <p>
+        HTML-елементи можуть знаходитись у різних станах, зокрема:
+    </p>
+    <ul>
+        <li>hover - над елементом знаходиться курсор миші</li>
+        <li>active - елемент є вибраним (натиснення пробілу/Enter активує його)</li>
+        <li>focus - на елеметі фокус введення (друк з клавіатури передається на нього)</li>
+        <li>checked - для чекбоксів чи радіокнопок - стан "вибрано"</li>
+        <li>visited - для посилань, по яких були переходи</li>
+    </ul>
+    <p>
+        Для стилізації елементів у різному стані у CSS задаються псевдокласи,
+        що завершуються двокрапкою та назвою стану, наприклад, 
+        <code>button:hover {...}</code>
+    </p>
+    <p>
+        <button>Кнопка 1</button> 
+        <button>Кнопка 2</button>
+        <input type="checkbox" id="agree" /><label for="agree">Погоджуюсь із правилами</label>
+    </p>
+</body>
+</html>
